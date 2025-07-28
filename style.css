@@ -216,12 +216,13 @@ nav ul li a:hover{
     font-family: 'Oswald', sans-serif;
 }
 
-.feature-text h2{
+.menu-content .text h2, .feature-text h2{
     font-size: 5rem;
     text-transform: uppercase;
     color: var(--black-light-color);
+    font-family: 'Oswald', sans-serif;
 }
-.feature-text p{
+.menu-content .text p, .feature-text p{
     color: var(--pg-color);
     font-weight: 400;
     width: 70%;
@@ -245,8 +246,227 @@ nav ul li a:hover{
     align-items: center;
     background-color: var(--primary-color);
 }
-.row-content h3{
-    font-family: "Oswald", sans-serif;
+.row{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
+.row-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+
 
 }
+.row-content h3{
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+}
+.row-content i{
+    font-size: 50px;
+}
+.menu-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.menu-content .text{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+.menu-cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid #dadada;
+    overflow: hidden;
+    position: relative;
+}
+.card .card-image{
+    width: 100%;
+    overflow: hidden;
+}
+.card .card-image img{
+    width: 100%;
+    transition: all 0.6s;
+}
+.card .card-image:hover img{
+    transform: scale(1.1);
+}
+.card .card-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+}
+.card .card-content .start-heart .ri-heart-line{
+    color: var(--black-light-color);   
+}
+.card .card-content .start-heart i{
+    color: var(--primary-color);
+    font-size: 22px;
+}
+.card .card-content .start-heart i:hover{
+    color: var(--secondary-color);
+}
+.start-heart{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-card{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.price-card .box{
+    height: 40px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #831619;
+}
+.price-card .box span{
+    font-size: 22px;
+    color: var(--primary-color);
+    font-weight: 800;
+
+}
+.price-card .add-cart{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    height: 40px;
+    width: 50%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--primary-color);
+    transition: all 0.3s;
+    opacity: 0;
+}
+.card:hover .price-card .add-cart{
+    top: 0;
+    opacity: 1;
+}
+.price-card .add-cart span{
+    color: var(--black-light-color);
+    font-weight: 500;
+
+}
+/* Box Container */
+.banner .brow{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    gap: 30px;
+
+}
+.b-box{
+    width: 100%;
+    background-image: url(image/pb-2-1.jpg);
+    border-radius: 5px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.box-info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 30px;
+    text-transform: uppercase;
+    color: #212529;
+}
+.box-info h1:nth-child(1){
+    font-weight: 300;
+    font-size: 37px;
+    letter-spacing: 1px;
+}
+
+#h1info{
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-family: 'Oswald' , sans-serif;
+    font-size: 37px;
+}
+.box-info .btn{
+    background-color: var(--secondary-color); 
+    color: var(--white-color);
+    margin-top: 20px;  
+}
+.box-info .btn:hover{
+    border: 2px solid var(--secondary-color);
+    background-color: #83161a00;
+    color: var(--secondary-color);
+}
+.box2{
+    height: 100%;
+    width: 100%;
+    background-image: url(image/pb-2-2.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
