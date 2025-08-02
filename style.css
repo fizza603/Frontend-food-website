@@ -607,7 +607,6 @@ nav ul li a:hover{
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding-bottom: 50px;
 }
 .page-image img{
     width: 100%;
@@ -615,27 +614,12 @@ nav ul li a:hover{
     background-position: top;
     background-repeat: no-repeat;
 }
-.bg-divider{
-    width: 100%;
-    height: 350px;
-    background-image: url(image/divider-04.jpg);
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-.dvdr{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.751);
-}
 .offer-info{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 30px 0;
     gap: 20px;
 
 }
@@ -732,4 +716,352 @@ nav ul li a:hover{
 }
 .price-card span{
     font-family: 'Oswald' , sans-serif;
+}
+.banner-two{
+    background-color: #fe950b;
+    padding: 0 10%;
+    padding-top: 50px;
+    flex-direction: row;
+    align-items: center;
+}
+.btwo-page{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-two img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.btwo-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.btwo-text h2:nth-child(1){
+    text-transform: uppercase;
+    font-size: 3rem;
+    width: 100%;
+    color: var(--secondary-color);
+    font-weight: 400;
+    font-family: 'Oswald' , sans-serif;
+
+}
+.btwo-text h2:nth-child(2){
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: var(--black-light-color);
+    font-family: 'Oswald' , sans-serif;
+}
+.btwo-text p{
+    padding: 20px 0;
+
+}
+.icons{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+.icons img{
+    width: 30%;
+}
+.events{
+    gap: 50px;
+}
+.event-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+}
+.event-text h2{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: 'Oswald' , sans-serif;
+    width: 100%;
+    font-weight: 600;
+}
+
+.event-text p{
+    width: 80%;
+    text-align: center;
+}
+.blog-rows{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    
+}
+.blog-page{
+    overflow: hidden;
+    width: 100%;
+}
+.blog-col{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    transition: var(--transition);
+    
+}
+.blog-page img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.blog-col .blog-text {
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.blog-col .blog-text h3{
+    font-weight: 500;
+    font-size: 1.9rem;
+    font-family: 'Oswald' , sans-serif;
+    color: var(--black-light-color);
+}
+.blog-col:hover img{
+    transform: scale(1.1);
+}
+
+.swiper-container{
+    background-color: #f6f9fa;
+    width: 100%;
+    padding: 50px 0;
+
+}
+
+.myswiper{
+    width: 80%;
+}
+
+.swiper-slide{
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+}
+.my-slide img{
+    width: 150px;
+}
+.nonveg-text{
+    padding: 50px 0;
+}
+.content h3{
+    font-size: 23px;
+    font-family: 'Oswald' , sans-serif;
+    color: var(--secondary-color);
+
+}
+.content{
+    text-align: center;
+}
+
+.nonveg-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    gap: 30px;
+
+}
+.nonveg-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid #f9f6fa;
+    border-radius: 5px;
+    padding: 30px 10px;
+}
+.nonveg-image img{
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+}
+.nonveg-card .content{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-direction: column;
+}
+.nonveg-image{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.nonveg-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 8px;
+}
+.nonveg-price span{
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+.start i{
+    font-size: 20px;
+    color: var(--primary-color);
+}
+.nonveg-image .nonveg-price{
+    position: absolute;
+    top: 90%;
+    left: 0%;
+}
+.nonveg-card .content #nonveg-btn{
+    width: 85%;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #00000022;
+    text-transform: var(--transition);
+}
+.nonveg-card .content #nonveg-btn:hover{
+    background-color: var(--primary-color);
+    color: var(--black-light-color);
+    border: none;
+}
+/* Testimonial Swiper */
+.testimonials{
+    background-image: url(image/reviews.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 10px 10%;
+}
+.swiper{
+    width: 100%;
+}
+.testimonial-main{
+    align-content: center;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 80px 0;
+}
+.tst-text{
+    align-content: center;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.tst-text p{
+    font-size: 25px;
+    color: #fff;
+    width: 75%;
+    margin: 0 auto;
+    
+}
+.tst-text .start{
+    align-content: center;
+    font-size: 25px;
+    color: var(--primary-color);
+}
+.tst-text span{
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'Oswald' , sans-serif;
+}
+.tst-page img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+
+}
+
+.img-gallery {
+    gap: 50px;
+
+}
+.gallery{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+.glry-box{
+    background-color: rgba(10, 10, 10, 0.45);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.glry-box:hover .glry-txt{
+    top: 0%;
+
+}
+.glry-box img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    transition: var(--transition);
+}
+.glry-box:hover  img{
+    transform: scale(1.1)
+}
+.glry-box .glry-txt{
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    text-align: left;
+    flex-direction: column;
+    background: linear-gradient(0deg,rgba(0,0,0,0.541) 15% , rgba(255,255,255,0) 95%);
+    padding: 5px 10px;
+    transition: all ease 0.5s;
+}
+.glry-txt span{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Oswald' , sans-serif;
+}
+.glry-txt .glry-name{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.glry-name .glry-price{
+    font-weight: 300;
+}
+@media (max-width: 900px) {
+  html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 }
